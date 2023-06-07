@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'OriginTech';
+  src:local('fonts'), 
+  url('../src/assets/fonts/OriginTech\ personal\ use.otf') format('opentype'), 
+  url('../src/assets/fonts/OriginTech\ personal\ use.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, 
+body{
+
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 'EB Garamond', serif;
+  overflow: overlay;
+}
+
+.wrapper{
+  width: min(55rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (min-width: 102.4rem) {
+  div.wrapper{
+    width: min(85rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+  }
+}
