@@ -1,0 +1,42 @@
+#menu{
+    width: 100vw;
+    background: #ffffff33;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ffffff1a;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 3;
+}
+
+.wrapper{
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu span{
+    font-size: 1.4rem;
+    font-family: 'OriginTech';
+    text-transform: uppercase;
+}
+
+#menu a{
+    color: #ffffffb3;
+    transition: .8s;
+}
+
+#menu a:hover{
+    color: var(--lineColor);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.3rem var(--whitheColor)
+}

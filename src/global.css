@@ -1,0 +1,67 @@
+/* GLOBAL */
+@font-face {
+  font-family: 'OriginTech';
+  src:local('fonts'), 
+  url('../src/assets/fonts/OriginTech\ personal\ use.otf') format('opentype'), 
+  url('../src/assets/fonts/OriginTech\ personal\ use.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /*1rem = 10px*/
+
+  --blackColor: #000000;
+  --whiteColor: #dfdfdf;
+  --topColor: #931621;
+  --bottomColor: #0b5d1edd;
+  --smothBackgroundColor: #dfe0dc;
+  --strongBackgroundColor: #101942;
+  --baseColor: #099f99;
+  --lineColor: #044389;
+  --smoothTextColor: #242424;
+  --strongTextColor: #000000;
+  --shadowColor:#00000073;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--backgroundColor);
+  overflow: overlay;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font-size: 1.6rem;
+  color: var(--smoothTextColor);
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

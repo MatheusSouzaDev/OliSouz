@@ -1,0 +1,30 @@
+.works {
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(135deg, #0000 20.5%, #099f99 0 29.5%, #0000 0) 0
+      16px,
+    linear-gradient(45deg, #0000 8%, #099f99 0 17%, #0000 0 58%) 32px 0,
+    linear-gradient(
+      135deg,
+      #0000 8%,
+      #099f99 0 17%,
+      #0000 0 58%,
+      #099f99 0 67%,
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #0000 8%,
+      #099f99 0 17%,
+      #0000 0 58%,
+      #099f99 0 67%,
+      #0000 0 83%,
+      #099f99 0 92%,
+      #0000 0
+    ),
+    #044389;
+  background-size: 64px 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+}

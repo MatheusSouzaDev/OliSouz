@@ -1,0 +1,224 @@
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner {
+  padding: 8rem 4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.card {
+  width: 32rem;
+  height: 16rem;
+  background-color: 0.333;
+  transition: 0.5s;
+  position: relative;
+}
+
+.card:hover {
+  height: 40rem;
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.lines::before {
+  content: "";
+  width: 60rem;
+  height: 12rem;
+  background: linear-gradient(
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff,
+    transparent
+  );
+  animation: animate 4s linear infinite;
+  animation-play-state: paused;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.card:hover .lines::before {
+  animation-play-state: running;
+}
+
+.lines::after {
+  content: "";
+  background: linear-gradient(135deg, #0000 20.5%, #099f99 0 29.5%, #0000 0) 0
+      1.6rem,
+    linear-gradient(45deg, #0000 8%, #099f99 0 17%, #0000 0 58%) 3.2rem 0,
+    linear-gradient(
+      135deg,
+      #0000 8%,
+      #099f99 0 17%,
+      #0000 0 58%,
+      #099f99 0 67%,
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #0000 8%,
+      #099f99 0 17%,
+      #0000 0 58%,
+      #099f99 0 67%,
+      #0000 0 83%,
+      #099f99 0 92%,
+      #0000 0
+    ),
+    #044389;
+  background-size: 6.4rem 6.4rem;
+  position: absolute;
+  inset: 0.3rem;
+}
+
+.imgBx {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  transition: 0.5s;
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .imgBx {
+  top: 2.5rem;
+  width: 16rem;
+  height: 16rem;
+}
+
+.imgBx::before {
+  content: "";
+  width: 50rem;
+  height: 15rem;
+  background: linear-gradient(
+    transparent,
+    #ff3c7b,
+    #ff3c7b,
+    #ff3c7b,
+    transparent
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate2 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .imgBx::before {
+  animation-play-state: running;
+}
+
+.imgBx::after {
+  content: "";
+  background-color: #292929;
+  position: absolute;
+  inset: 0.3rem;
+}
+
+.imgBx img {
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.card:hover .imgBx img {
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.details {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(14.5rem);
+}
+
+.card:hover .content .details {
+  transform: translateY(0);
+}
+
+.details h2 {
+  font-size: 2rem;
+  font-family: "OriginTech";
+  font-weight: 500;
+  color: #45f3ff;
+  line-height: 1.6rem;
+}
+
+.details p {
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .content .details p {
+  opacity: 1;
+}
+
+.details a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #45f3ff;
+  color: #292929;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .content .details a {
+  opacity: 1;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}

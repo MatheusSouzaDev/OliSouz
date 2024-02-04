@@ -1,0 +1,12 @@
+.skills{
+    padding-inline: 2.2rem;
+    background-color: #80827340;
+}
+
+@media (min-width:102.4rem) {
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
