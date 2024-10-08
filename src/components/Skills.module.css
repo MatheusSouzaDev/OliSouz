@@ -1,6 +1,8 @@
 .skills{
     padding-inline: 2.2rem;
     background-color: #80827340;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media (min-width:102.4rem) {

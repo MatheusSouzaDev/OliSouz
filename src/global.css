@@ -1,12 +1,28 @@
 /* GLOBAL */
 @font-face {
-  font-family: 'OriginTech';
-  src:local('fonts'), 
-  url('../src/assets/fonts/OriginTech\ personal\ use.otf') format('opentype'), 
-  url('../src/assets/fonts/OriginTech\ personal\ use.ttf') format('truetype');
+  font-family: "OriginTech";
+  src: local("fonts"), url("./assets/fonts/OriginTech.otf") format("opentype"),
+    url("./assets/fonts/OriginTech.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "13Misa";
+  src: local("fonts"), url("./assets/fonts/13Misa.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hiro";
+  src: local("fonts"), url("./assets/fonts/Hiromisake.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Jacques+Francois+Shadow&display=swap');
 
 * {
   margin: 0;
@@ -25,9 +41,9 @@
   --strongBackgroundColor: #101942;
   --baseColor: #099f99;
   --lineColor: #044389;
-  --smoothTextColor: #242424;
+  --smoothTextColor: #b1b7a5;
   --strongTextColor: #000000;
-  --shadowColor:#00000073;
+  --shadowColor: #00000073;
 }
 
 html {

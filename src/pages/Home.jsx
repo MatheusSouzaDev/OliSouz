@@ -15,24 +15,11 @@ export default function Home() {
         <Menu />
       </header>
       <main>
-        <swiper-container navigation="true" pagination="true" loop="true">
-          <swiper-slide>
-            <Coming />
-          </swiper-slide>
-          <swiper-slide>
-            <AboutMe />
-          </swiper-slide>
-          <swiper-slide>
-            <Works />
-          </swiper-slide>
-          <swiper-slide>
-            <Skills />
-          </swiper-slide>
-        </swiper-container>
+        <Coming />
+        <AboutMe />
+        <Works />
+        <Skills />
       </main>
-      <footer>
-        <GetOut />
-      </footer>
     </>
   );
 }
